@@ -21,6 +21,11 @@ const UserDataSchema = new mongoose.Schema(
     WhatsAppNumber: { type: String, required: true, unique: true },
     MobileNumber: { type: String, required: true, unique: true },
     Email: { type: String, required: true, unique: true },
+    Name: { type: String, required: true },
+    Designation: { type: String, required: true },
+    Role: { type: String, required: true },
+    BusinessDetails: { type: String, required: true },
+    AdditionalInformation: { type: String, required: true },
   },
   { timestamps: true }
 );
